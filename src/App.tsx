@@ -1,15 +1,21 @@
-import React from 'react';
-import { EnpyreDisplay, EnpyreEditor, EnpyreProvider, usePyodide } from 'enpyre';
+import React, { useEffect } from 'react';
+import { EnpyreDisplay, EnpyreEditor, EnpyreProvider, usePyodide, useCode } from 'enpyre';
+import { code } from './code';
 
 const Example: React.FC = () => {
-  const { runCode } = usePyodide();
+  const { runCode, pyodideLoaded } = usePyodide();
+  const { setCode } = useCode();
+
+  useEffect(() => {
+      setCode(code);
+  }, []);
 
   return (
     <div style={{display: 'flex'}}>
       <div>
         <EnpyreDisplay />
         <EnpyreEditor />
-        <button onClick={runCode}>Run Code</button>
+        <button onClick={runCode} disabled={!pyodideLoaded}>Run Code</button>
       </div>
       <div style={{ padding: 10 }}>
         <h1>Examples code to run</h1>

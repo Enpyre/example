@@ -1639,6 +1639,11 @@
   dependencies:
     ismobilejs "^1.1.0"
 
+"@pixi/sound@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@pixi/sound/-/sound-4.2.0.tgz#fbf3786e099caafd5d888b29401109f387eaf984"
+  integrity sha512-l7pbmLQa5soahfssyJjs/nkXMND8QwxqB3dA/zGr+87sVebOqohbJ5dLleBUWdPsAV+VeaQHi/4ohZR8fRt3og==
+
 "@pixi/sprite-animated@6.4.2":
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/@pixi/sprite-animated/-/sprite-animated-6.4.2.tgz#b3f6e8f4f2b1a4a40ebff1821e81fa45e588e8b9"
@@ -3976,11 +3981,12 @@ enhanced-resolve@^5.9.3:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
 
-enpyre@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/enpyre/-/enpyre-0.0.8.tgz#2c4b849ca51341e8a1897a7a37c0e9b8367856d5"
-  integrity sha512-C4AkKQRfy6XrXbTNxqZFpYwJH5yHCjgFSf4jz7XE/L0U2VuD7nlxNyENPOQh1L/O9uEhYdcQS3zrvfMX4gLmiA==
+enpyre@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/enpyre/-/enpyre-0.0.13.tgz#b7983f44ded61b05d431822cc2d8cebbb3223f67"
+  integrity sha512-924GYUMEiKb6PtmJ14FxniMYj6sjxCqd2dYRZIhNMq5PHUqzj9QshqZPerCZ7ABOAlkojzMB6Rvo9AyPxeaOOg==
   dependencies:
+    "@pixi/sound" "^4.2.0"
     pixi.js "^6.3.2"
   optionalDependencies:
     ace-builds "^1.5.3"

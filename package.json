@@ -11,7 +11,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "encoding": "^0.1.13",
-    "enpyre": "^0.0.8",
+    "enpyre": "^0.0.13",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
